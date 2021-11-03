@@ -47,4 +47,5 @@ MonoBehaviour:
     type: 3}
   bodyPicker: {fileID: 1125303296121733397, guid: e2fae6d3939a1fc41a419999fcb5ee22,
     type: 3}
-  legPicker: {fileID: 0}
+  legPicker: {fileID: 1125303296121733397, guid: e2fae6d3939a1fc41a419999fcb5ee22,
+    type: 3}

@@ -1,9 +1,16 @@
-﻿using System.Collections;
+﻿using System.Numerics;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class partPicker : MonoBehaviour
 {
+    public GameObject bg;
+
+    public GameObject rightArrow;
+
+    public GameObject leftArrow;
     public List<GameObject> availableParts;
 
     private int currentPart = 0;
@@ -19,10 +26,12 @@ public class partPicker : MonoBehaviour
         currentPart %= availableParts.Count;
     }
 
+    public int arrowShift;
 
     void Start()
     {
-        
+        UnityEngine.Object.Instantiate(rightArrow, new UnityEngine.Vector3(arrowShift, 0, 0), UnityEngine.Quaternion.identity);
+        UnityEngine.Object.Instantiate(leftArrow, new UnityEngine.Vector3(-arrowShift, 0, 0), UnityEngine.Quaternion.identity);
     }
 
     // Update is called once per frame
