@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class heroPicker : MonoBehaviour
 {
+
+    public GameObject bodyPicker;
+
     // Start is called before the first frame update
     void Start()
     {
