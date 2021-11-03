@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterBody : MonoBehaviour
+public abstract class MonsterBody : MonsterPart
 {
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MonsterLegs : MonsterPart
+public class MonsterPart : MonoBehaviour
 {
     // Start is called before the first frame update
+    int HP;
     void Start()
     {
         

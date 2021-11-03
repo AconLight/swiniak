@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterHead : MonoBehaviour
+public abstract class MonsterHead : MonsterPart
 {
     // Start is called before the first frame update
     void Start()
