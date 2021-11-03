@@ -6,7 +6,7 @@ public class partPicker : MonoBehaviour
 {
     public List<GameObject> availableParts;
 
-    public int currentPart = 0;
+    private int currentPart = 0;
     // Start is called before the first frame update
 
     public void moveRight() {
