@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5468582553224734543}
   - component: {fileID: 6750217888033756398}
   m_Layer: 0
-  m_Name: bodyPicker
+  m_Name: partPicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,3 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc867f4913e306f4dbd876d1bad83543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bg: {fileID: 0}
+  rightArrow: {fileID: 4310264457550886972, guid: 28295c8b74bd56941bd6fa238cf96136,
+    type: 3}
+  leftArrow: {fileID: 5406427213797744755, guid: 176a9ec589787f4459011a869fbc60d5,
+    type: 3}
+  availableParts: []
+  arrowShift: 1

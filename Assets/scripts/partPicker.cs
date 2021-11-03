@@ -30,8 +30,10 @@ public class partPicker : MonoBehaviour
 
     void Start()
     {
-        UnityEngine.Object.Instantiate(rightArrow, new UnityEngine.Vector3(arrowShift, 0, 0), UnityEngine.Quaternion.identity);
-        UnityEngine.Object.Instantiate(leftArrow, new UnityEngine.Vector3(-arrowShift, 0, 0), UnityEngine.Quaternion.identity);
+        GameObject myrightArrow = UnityEngine.Object.Instantiate(rightArrow, new UnityEngine.Vector3(arrowShift, transform.localPosition.y, 0), UnityEngine.Quaternion.identity);
+        GameObject myleftArrow = UnityEngine.Object.Instantiate(leftArrow, new UnityEngine.Vector3(-arrowShift, transform.localPosition.y, 0), UnityEngine.Quaternion.identity);
+        myrightArrow.transform.parent = gameObject.transform;
+        myleftArrow.transform.parent = gameObject.transform;
     }
 
     // Update is called once per frame
