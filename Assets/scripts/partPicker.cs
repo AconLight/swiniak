@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class partPicker : MonoBehaviour
 {
-    public GameObject bg;
+    
 
     public GameObject rightArrow;
 

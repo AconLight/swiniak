@@ -12,6 +12,7 @@ public class heroPicker : MonoBehaviour
      [SerializeField]
     private GameObject legPicker;
     private List<GameObject> pickers;
+    public GameObject bg;
 
     private int currentPicker = 0;
 
@@ -35,9 +36,12 @@ public class heroPicker : MonoBehaviour
         GameObject myHeadPicker = UnityEngine.Object.Instantiate(headPicker, new UnityEngine.Vector3(0, 0, 0), UnityEngine.Quaternion.identity);
         GameObject myBodyPicker = UnityEngine.Object.Instantiate(bodyPicker, new UnityEngine.Vector3(0, -1, 0), UnityEngine.Quaternion.identity);
         GameObject myLegPicker = UnityEngine.Object.Instantiate(legPicker, new UnityEngine.Vector3(0, -2, 0), UnityEngine.Quaternion.identity);
+        GameObject mybg = UnityEngine.Object.Instantiate(bg, new UnityEngine.Vector3(0, 0, 0), UnityEngine.Quaternion.identity);
         myHeadPicker.transform.parent = gameObject.transform;
         myBodyPicker.transform.parent = gameObject.transform;
         myLegPicker.transform.parent = gameObject.transform;
+        mybg.transform.parent = gameObject.transform;
+        
     }
 
     // Update is called once per frame
