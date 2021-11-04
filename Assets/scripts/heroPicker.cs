@@ -5,19 +5,22 @@ using UnityEngine;
 public class heroPicker : MonoBehaviour
 {
 
-    public GameObject headPicker;
-    public GameObject bodyPicker;
-    public GameObject legPicker;
+   [SerializeField]
+    private GameObject headPicker;
+    [SerializeField]
+    private GameObject bodyPicker;
+     [SerializeField]
+    private GameObject legPicker;
     private List<GameObject> pickers;
 
     private int currentPicker = 0;
 
-    public void moveRight() {
+    public void moveUp() {
         currentPicker += 1;
         currentPicker %= pickers.Count;
     }
 
-    public void moveLeft() {
+    public void moveDown() {
         currentPicker -= 1;
         currentPicker %= pickers.Count;
     }
